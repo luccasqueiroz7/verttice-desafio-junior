@@ -101,6 +101,18 @@ Requisitos:
 - O uso de frameworks e bibliotecas é permitido, mas não é obrigatório.
 
 
+## O que será avaliado e valorizamos ❤️
+
+- Documentação
+- Código limpo e organizado (nomenclatura, etc)
+- Consistência e capacidade de argumentação das escolhas
+- Apresentação de soluções que domina
+- Manutenibilidade do código
+- Tratamento de erros
+- Cuidado com itens de segurança
+
+
+
 ## Como participar
 
 Por favor, envie-nos o código da sua solução. Se possível, inclua algumas instruções sobre como executar a página e alguns testes para garantir que ela esteja funcionando corretamente.
