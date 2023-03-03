@@ -72,7 +72,7 @@ Por exemplo, para o array [10, 3, 5, 6, 20], a função deve retornar o valor 20
 A função deve suportar arrays de qualquer tamanho (incluindo arrays vazios e com apenas um elemento), e deve ser eficiente em termos de tempo de execução e uso de memória.
 
 
-## Desafio 4
+## Desafio 4: Lista de Tarefas
 
 Crie uma página web responsiva que apresente uma lista de tarefas a fazer, com a possibilidade de adicionar e remover itens da lista. Você deve implementar a página usando JavaScript, HTML e CSS.
 
@@ -82,6 +82,22 @@ Requisitos:
 - Cada tarefa deve ter um checkbox que permite marcar a tarefa como concluída ou não.
 - As tarefas concluídas devem ser exibidas em uma cor diferente.
 - A página deve ser responsiva, funcionando bem em dispositivos móveis e desktops.
+- O uso de frameworks e bibliotecas é permitido, mas não é obrigatório.
+
+
+## Desafio 5: Calculadora Web
+
+Crie uma aplicação web que simule uma calculadora. A aplicação deve ser responsiva e utilizar JavaScript, HTML e CSS.
+
+Requisitos:
+
+- A aplicação deve ter uma interface com um display para exibir o resultado das operações.
+- A aplicação deve permitir a realização de operações básicas de matemática, como adição, subtração, multiplicação e divisão.
+- A aplicação deve permitir a entrada dos valores através de botões.
+- A aplicação deve permitir a entrada dos valores através do teclado.
+- A aplicação deve permitir a limpeza do display.
+- A aplicação deve permitir a utilização do último resultado como o primeiro valor da próxima operação.
+- A aplicação deve ser responsiva, funcionando bem em dispositivos móveis e desktops.
 - O uso de frameworks e bibliotecas é permitido, mas não é obrigatório.
 
 
