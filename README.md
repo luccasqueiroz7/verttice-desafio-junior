@@ -72,7 +72,7 @@ Por exemplo, para o array [10, 3, 5, 6, 20], a função deve retornar o valor 20
 A função deve suportar arrays de qualquer tamanho (incluindo arrays vazios e com apenas um elemento), e deve ser eficiente em termos de tempo de execução e uso de memória.
 
 
-# Desafio 4
+## Desafio 4
 
 Crie uma página web responsiva que apresente uma lista de tarefas a fazer, com a possibilidade de adicionar e remover itens da lista. Você deve implementar a página usando JavaScript, HTML e CSS.
 
