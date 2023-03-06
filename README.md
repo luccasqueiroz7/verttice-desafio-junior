@@ -1,123 +1,70 @@
-# Desafios em JavaScript
+# Getting Started with Create React App
 
-Este repositório contém três desafios em JavaScript que são utilizados como parte do processo de seleção de candidatos a desenvolvedor(a) júnior.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Desafio 1
+## Available Scripts
 
-Escreva uma função que receba uma string e retorne a contagem de cada caractere nessa string. Por exemplo, para a string "hello world", a função deve retornar um objeto que mapeia cada caractere ao seu número de ocorrências:
+In the project directory, you can run:
 
-```js
-{
-  "h": 1,
-  "e": 1,
-  "l": 3,
-  "o": 2,
-  "w": 1,
-  "r": 1,
-  "d": 1
-}
-```
+### `npm start`
 
-Você pode assumir que a entrada consiste apenas de caracteres alfanuméricos (ou seja, letras e números) e espaços em branco.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Desafio 2
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Você precisa implementar uma função que recebe uma lista de objetos com informações de um filme e retorna o valor total do orçamento de todos os filmes que tiveram uma classificação maior ou igual a 7.0.
+### `npm test`
 
-A lista de filmes tem o seguinte formato:
-```js
-const filmes = [
-  { 
-    titulo: 'The Godfather', 
-    classificacao: 9.2, 
-    orcamento: 6000000 
-  },
-  { 
-    titulo: 'The Shawshank Redemption', 
-    classificacao: 9.3, 
-    orcamento: 25000000 
-  },
-  { 
-    titulo: 'The Dark Knight', 
-    classificacao: 9.0, 
-    orcamento: 185000000 
-  },
-  { 
-    titulo: 'Pulp Fiction', 
-    classificacao: 8.9, 
-    orcamento: 8000000 
-  },
-  { 
-    titulo: 'The Lord of the Rings: The Return of the King', 
-    classificacao: 8.9, 
-    orcamento: 94000000 
-  },
-  { 
-    titulo: 'The Good, the Bad and the Ugly', 
-    classificacao: 8.8, 
-    orcamento: 1200000 
-  }
-];
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-A função deve retornar o valor total do orçamento dos filmes que tiveram uma classificação maior ou igual a 7.0.
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Desafio 3
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Você precisa implementar uma função que recebe um array de números inteiros e retorna o maior produto possível entre dois números nesse array.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Por exemplo, para o array [10, 3, 5, 6, 20], a função deve retornar o valor 200 (que é o produto entre os números 10 e 20, que são os maiores números do array).
+### `npm run eject`
 
-A função deve suportar arrays de qualquer tamanho (incluindo arrays vazios e com apenas um elemento), e deve ser eficiente em termos de tempo de execução e uso de memória.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Desafio 4: Lista de Tarefas
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Crie uma página web responsiva que apresente uma lista de tarefas a fazer, com a possibilidade de adicionar e remover itens da lista. Você deve implementar a página usando JavaScript, HTML e CSS.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Requisitos:
+## Learn More
 
-- A página deve ter uma lista de tarefas, com a possibilidade de adicionar novas tarefas e remover tarefas existentes.
-- Cada tarefa deve ter um checkbox que permite marcar a tarefa como concluída ou não.
-- As tarefas concluídas devem ser exibidas em uma cor diferente.
-- A página deve ser responsiva, funcionando bem em dispositivos móveis e desktops.
-- O uso de frameworks e bibliotecas é permitido, mas não é obrigatório.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Desafio 5: Calculadora Web
+### Code Splitting
 
-Crie uma aplicação web que simule uma calculadora. A aplicação deve ser responsiva e utilizar JavaScript, HTML e CSS.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Requisitos:
+### Analyzing the Bundle Size
 
-- A aplicação deve ter uma interface com um display para exibir o resultado das operações.
-- A aplicação deve permitir a realização de operações básicas de matemática, como adição, subtração, multiplicação e divisão.
-- A aplicação deve permitir a entrada dos valores através de botões.
-- A aplicação deve permitir a entrada dos valores através do teclado.
-- A aplicação deve permitir a limpeza do display.
-- A aplicação deve permitir a utilização do último resultado como o primeiro valor da próxima operação.
-- A aplicação deve ser responsiva, funcionando bem em dispositivos móveis e desktops.
-- O uso de frameworks e bibliotecas é permitido, mas não é obrigatório.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
-## O que será avaliado e valorizamos ❤️
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Documentação
-- Código limpo e organizado (nomenclatura, etc)
-- Consistência e capacidade de argumentação das escolhas
-- Apresentação de soluções que domina
-- Manutenibilidade do código
-- Tratamento de erros
-- Cuidado com itens de segurança
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
-## Como participar
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Por favor, envie-nos o código da sua solução. Se possível, inclua algumas instruções sobre como executar a página e alguns testes para garantir que ela esteja funcionando corretamente.
+### `npm run build` fails to minify
 
-Ficamos ansiosos para ver sua solução!
-
-
-Obrigado pelo seu interesse em trabalhar conosco!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
