@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "../../components/Header";
+import { ChallengerThreeSection } from "./style";
 
 export const ChallengerThree = () => {
   const numbers = [
@@ -26,9 +27,9 @@ export const ChallengerThree = () => {
   return (
     <>
       <Header />
-      <section>
+      <ChallengerThreeSection>
+        <h3>Arrays de teste</h3>
         <ul>
-          <h3>Arrays de teste</h3>
           {numbers.map((arr, index) => (
             <li key={index}>
               <button onClick={() => productOfValues(arr)}>[{arr.join(", ").split("")}]</button>
@@ -36,7 +37,7 @@ export const ChallengerThree = () => {
           ))}
         </ul>
         <h2>Resultado: {resultProduct}</h2>
-      </section>
+      </ChallengerThreeSection>
     </>
   );
 };
