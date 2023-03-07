@@ -6,7 +6,7 @@ export const HomePage = () => {
 
   return (
     <HomePageSection>
-      <h1>Desafio verttice</h1>
+      <h1>Desafio Verttice</h1>
       <ul>
         {[1, 2, 3, 4, 5].map((elem) => (
           <li key={elem} onClick={() => history.push(`/desafio/${elem}/`)}>

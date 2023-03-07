@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChallengerFourSection, TodoLi } from "./style";
 
 import { BsTrash } from "react-icons/bs";
+import { Header } from "../../components/Header";
 
 export const ChallengerFour = () => {
   const [todoList, setTodoList] = useState([]);
@@ -30,34 +31,38 @@ export const ChallengerFour = () => {
   }
 
   return (
-    <ChallengerFourSection>
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          addTodoList();
-        }}
-      >
-        <input type="text" placeholder="Adicionar tarefa" className="addInput" />
-        <button type="submit">Adicionar</button>
-      </form>
-      <ul>
-        <h2>Lista de tarefas</h2>
-        {todoList.map((todo, index) => (
-          <TodoLi checked={todo.checked} key={index}>
-            <div>
-              <input
-                type="checkbox"
-                onChange={() => {
-                  checkedTodo(index);
-                }}
-                checked={todo.checked}
-              />
-              <p>{todo.todo}</p>
-            </div>
-            <BsTrash color="red" cursor="pointer" onClick={() => removeTodoList(index)} />
-          </TodoLi>
-        ))}
-      </ul>
-    </ChallengerFourSection>
+    <>
+      <Header />
+
+      <ChallengerFourSection>
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            addTodoList();
+          }}
+        >
+          <input type="text" placeholder="Adicionar tarefa" className="addInput" />
+          <button type="submit">Adicionar</button>
+        </form>
+        <ul>
+          <h2>Lista de tarefas</h2>
+          {todoList.map((todo, index) => (
+            <TodoLi checked={todo.checked} key={index}>
+              <div>
+                <input
+                  type="checkbox"
+                  onChange={() => {
+                    checkedTodo(index);
+                  }}
+                  checked={todo.checked}
+                />
+                <p>{todo.todo}</p>
+              </div>
+              <BsTrash color="red" cursor="pointer" onClick={() => removeTodoList(index)} />
+            </TodoLi>
+          ))}
+        </ul>
+      </ChallengerFourSection>
+    </>
   );
 };

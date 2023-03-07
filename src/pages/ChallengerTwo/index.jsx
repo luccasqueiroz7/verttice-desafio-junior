@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Header } from "../../components/Header";
 
 const movies = [
   {
@@ -45,31 +46,34 @@ export const ChallengerTwo = () => {
   }
 
   return (
-    <section>
-      <ul>
-        {movies.map((movie, index) => (
-          <li key={index}>
-            <p>Titulo: {movie.title}</p>
-            <p>Classificação: {movie.rating}</p>
-            <p>
-              Orçamento:
-              {movie.budget.toLocaleString("pt-BR", {
-                minimumFractionDigits: 2,
-                style: "currency",
-                currency: "BRL",
-              })}
-            </p>
-          </li>
-        ))}
-      </ul>
-      <button onClick={movieBudget}>Gerar orçamento total</button>
-      <p>
-        {totalBudget?.toLocaleString("pt-BR", {
-          minimumFractionDigits: 2,
-          style: "currency",
-          currency: "BRL",
-        })}
-      </p>
-    </section>
+    <>
+      <Header />
+      <section>
+        <ul>
+          {movies.map((movie, index) => (
+            <li key={index}>
+              <p>Titulo: {movie.title}</p>
+              <p>Classificação: {movie.rating}</p>
+              <p>
+                Orçamento:
+                {movie.budget.toLocaleString("pt-BR", {
+                  minimumFractionDigits: 2,
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <button onClick={movieBudget}>Gerar orçamento total</button>
+        <p>
+          {totalBudget?.toLocaleString("pt-BR", {
+            minimumFractionDigits: 2,
+            style: "currency",
+            currency: "BRL",
+          })}
+        </p>
+      </section>
+    </>
   );
 };
