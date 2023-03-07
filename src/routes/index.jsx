@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import { ChallengerFour } from "../pages/ChallengerFour";
 import { ChallengerOne } from "../pages/ChallengerOne";
 import { ChallengerThree } from "../pages/ChallengerThree";
 import { ChallengerTwo } from "../pages/ChallengerTwo";
@@ -18,6 +19,9 @@ export const Routes = () => {
       </Route>
       <Route path="/desafio/3/">
         <ChallengerThree />
+      </Route>
+      <Route path="/desafio/4/">
+        <ChallengerFour />
       </Route>
     </Switch>
   );
