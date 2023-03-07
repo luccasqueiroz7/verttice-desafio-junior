@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "../../components/Header";
+import { ChallengerOneSection } from "./style";
 
 export const ChallengerOne = () => {
   const [characters, setCharacters] = useState({});
@@ -19,7 +20,7 @@ export const ChallengerOne = () => {
   return (
     <>
       <Header />
-      <section>
+      <ChallengerOneSection>
         <form>
           <input
             type="text"
@@ -27,17 +28,17 @@ export const ChallengerOne = () => {
             onChange={(event) => charactersCounter(event.target.value)}
           />
         </form>
-        {Object.entries(characters).map((elem, index) => (
-          <ul key={index}>
-            <li>
-              <p>{elem[0]}</p>
+        <ul>
+          <h2>Contagem de caracteres</h2>
+          {Object.entries(characters).map((elem, index) => (
+            <li key={index}>
+              <p>
+                {elem[0]}: {elem[1]}
+              </p>
             </li>
-            <li>
-              <p>{elem[1]}</p>
-            </li>
-          </ul>
-        ))}
-      </section>
+          ))}
+        </ul>
+      </ChallengerOneSection>
     </>
   );
 };
