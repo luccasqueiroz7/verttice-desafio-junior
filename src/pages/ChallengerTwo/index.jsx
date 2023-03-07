@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "../../components/Header";
+import { ChallengerTwoSection } from "./style";
 
 const movies = [
   {
@@ -48,7 +49,7 @@ export const ChallengerTwo = () => {
   return (
     <>
       <Header />
-      <section>
+      <ChallengerTwoSection>
         <ul>
           {movies.map((movie, index) => (
             <li key={index}>
@@ -73,7 +74,7 @@ export const ChallengerTwo = () => {
             currency: "BRL",
           })}
         </p>
-      </section>
+      </ChallengerTwoSection>
     </>
   );
 };
