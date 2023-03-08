@@ -3,9 +3,12 @@ import { ChallengerFourSection, TodoLi } from "./style";
 
 import { BsTrash } from "react-icons/bs";
 import { Header } from "../../components/Header";
+import { ModalDeleteTodo } from "../../components/ModalDeleteTodo";
 
 export const ChallengerFour = () => {
   const [todoList, setTodoList] = useState([]);
+  const [removeTodo, setRemoveTodo] = useState(false);
+  const [indexTodo, setIndexTodo] = useState("");
 
   function addTodoList() {
     let inputValue = document.querySelector(".addInput");
@@ -33,7 +36,6 @@ export const ChallengerFour = () => {
   return (
     <>
       <Header />
-
       <ChallengerFourSection>
         <form
           onSubmit={(event) => {
@@ -58,10 +60,24 @@ export const ChallengerFour = () => {
                 />
                 <p>{todo.todo}</p>
               </div>
-              <BsTrash color="red" cursor="pointer" onClick={() => removeTodoList(index)} />
+              <BsTrash
+                color="red"
+                cursor="pointer"
+                onClick={() => {
+                  setRemoveTodo(true);
+                  setIndexTodo(index);
+                }}
+              />
             </TodoLi>
           ))}
         </ul>
+        {removeTodo && (
+          <ModalDeleteTodo
+            setRemoveTodo={setRemoveTodo}
+            removeTodoList={removeTodoList}
+            index={indexTodo}
+          />
+        )}
       </ChallengerFourSection>
     </>
   );
