@@ -25,10 +25,20 @@ export const ChallengerOneSection = styled.section`
     gap: 10px;
     flex-wrap: wrap;
 
+    > h2 {
+      font-size: 18px;
+    }
+
     > li {
       background-color: var(--blue-1);
       padding: 10px;
       border-radius: 5px;
+    }
+  }
+
+  @media (min-width: 425px) {
+    > ul > h2 {
+      font-size: 24px;
     }
   }
 `;
